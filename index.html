@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW LIFE DELIVERANCE CHURCH</title>
+     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <nav class="bg-[#f6f3ee] border-b border-[#d9c08c] shadow-md">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-3">
+    
+    <!-- Logo + Church Name -->
+    <a href="#" class="flex items-center space-x-3">
+      <img src="images/logo.jpeg" class="h-10 w-10 rounded-full border-2 border-[#aa8e56]" alt="Church Logo" />
+      <span class="text-[#9937ac] text-xl md:text-2xl font-bold tracking-wide uppercase">
+        New Life Deliverance Church
+      </span>
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button data-collapse-toggle="navbar-default" type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-[#463456] rounded-lg md:hidden hover:bg-[#e9dbb8] focus:outline-none focus:ring-2 focus:ring-[#aa8e56]"
+      aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul
+        class="font-semibold text-[#463456] flex flex-col p-4 md:p-0 mt-4 border border-[#e9dbb8] rounded-lg bg-[#fff] md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+
+        <li>
+          <a href="#"
+            class="block py-2 px-4 rounded-md text-white bg-[#9937ac] hover:bg-[#aa8e56] md:bg-transparent md:text-[#9937ac] md:hover:text-[#aa8e56] transition">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#"
+            class="block py-2 px-4 rounded-md hover:bg-[#d5bad9] md:hover:bg-transparent hover:text-[#6c9478] transition">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="#"
+            class="block py-2 px-4 rounded-md hover:bg-[#e9dbb8] md:hover:bg-transparent hover:text-[#aa8e56] transition">
+            Ministries
+          </a>
+        </li>
+
+        <li>
+          <a href="#"
+            class="block py-2 px-4 rounded-md hover:bg-[#d9c08c] md:hover:bg-transparent hover:text-[#463456] transition">
+            Sermons
+          </a>
+        </li>
+
+        <li>
+          <a href="#"
+            class="block py-2 px-4 rounded-md hover:bg-[#f6f3ee] md:hover:bg-transparent hover:text-[#6c9478] transition">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="relative">
+  <!-- Carousel -->
+  <div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <div class="relative h-80 md:h-[550px] overflow-hidden rounded-b-3xl">
+      <!-- Slide 1 -->
+      <div class="duration-700 ease-in-out" data-carousel-item>
+        <img src="images/1.webp" class="absolute block w-full h-full object-cover" alt="Church Image 1" />
+      </div>
+      <!-- Slide 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="images/2.webp" class="absolute block w-full h-full object-cover" alt="Church Image 2" />
+      </div>
+      <!-- Slide 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="images/3.webp" class="absolute block w-full h-full object-cover" alt="Church Image 3" />
+      </div>
+    </div>
+
+    <!-- Indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-6 left-1/2 space-x-3">
+      <button class="w-3 h-3 bg-[#b68fb6] rounded-full" data-carousel-slide-to="0"></button>
+      <button class="w-3 h-3 bg-[#d5bad9] rounded-full" data-carousel-slide-to="1"></button>
+      <button class="w-3 h-3 bg-[#9937ac] rounded-full" data-carousel-slide-to="2"></button>
+    </div>
+
+    <!-- Controls -->
+    <button type="button"
+      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+      data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#f6f3ee]/30 group-hover:bg-[#f6f3ee]/70">
+        <svg class="w-4 h-4 text-[#463456]" fill="none" viewBox="0 0 6 10">
+          <path d="M5 1 1 5l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </span>
+    </button>
+    <button type="button"
+      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+      data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#f6f3ee]/30 group-hover:bg-[#f6f3ee]/70">
+        <svg class="w-4 h-4 text-[#463456]" fill="none" viewBox="0 0 6 10">
+          <path d="m1 9 4-4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </span>
+    </button>
+  </div>
+
+  <!-- Welcome Text Overlay -->
+  <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center px-6 bg-[#463456]/60">
+    <h1 class="text-[#f6f3ee] text-3xl md:text-5xl font-bold mb-4">Welcome to</h1>
+    <h2 class="text-[#9937ac] text-4xl md:text-6xl font-extrabold tracking-wider">New Life Church Kampala</h2>
+    <p class="mt-4 text-[#f6f3ee] text-lg md:text-xl max-w-xl">
+      A place to worship, grow, and serve. Join us in building lives for Christ and transforming our city through love.
+    </p>
+    <a href="#contact"
+      class="mt-6 inline-block px-6 py-3 bg-[#d9c08c] text-[#463456] font-semibold rounded-lg hover:bg-[#aa8e56] transition">
+      Visit Us This Sunday
+    </a>
+  </div>
+</section>
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>
