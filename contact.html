@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Nav Links -->
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul
+        class="font-semibold text-[#463456] flex flex-col p-4 md:p-0 mt-4 border border-[#e9dbb8] rounded-lg bg-[#fff] md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+
+        <li>
+          <a href="index.html"
+            class="block py-2 px-4 rounded-md text-white bg-[#9937ac] hover:bg-[#aa8e56] md:bg-transparent md:text-[#9937ac] md:hover:text-[#aa8e56] transition">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="about.html"
+            class="block py-2 px-4 rounded-md hover:bg-[#d5bad9] md:hover:bg-transparent hover:text-[#6c9478] transition">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="ministries.html"
+            class="block py-2 px-4 rounded-md hover:bg-[#e9dbb8] md:hover:bg-transparent hover:text-[#aa8e56] transition">
+            Ministries
+          </a>
+        </li>
+
+        <li>
+          <a href="sermons.html"
+            class="block py-2 px-4 rounded-md hover:bg-[#d9c08c] md:hover:bg-transparent hover:text-[#463456] transition">
+            Sermons
+          </a>
+        </li>
+
+        <li>
+          <a href="contact.html"
+            class="block py-2 px-4 rounded-md hover:bg-[#f6f3ee] md:hover:bg-transparent hover:text-[#6c9478] transition">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - New Life Deliverance Church Kampala</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-purple: #9937ac; /* Vibrant purple for headings and buttons */
+            --secondary-gold: #aa8e56; /* Gold for accents */
+            --dark-purple: #463456; /* Dark purple for footer */
+            --cream-bg: #f6f3ee; /* Light cream for main background */
+            --light-purple: #b68fb6; /* Light purple for form borders */
+            --light-gold: #d9c08c; /* Light gold for hover effects */
+            --soft-purple: #d5bad9; /* Soft purple for button hover */
+            --soft-cream: #e9dbb8; /* Soft cream for secondary background */
+            --neutral-gray: #a8afab; /* Neutral gray for text */
+            --green-accent: #6c9478; /* Green for subtle highlights */
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--soft-cream);
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(153, 55, 172, 0.7), rgba(153, 55, 172, 0.7)), url('https://source.unsplash.com/1600x900/?church,contact');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .btn-primary {
+            background-color: var(--primary-purple);
+            color: var(--cream-bg);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: var(--soft-purple);
+            transform: scale(1.05);
+        }
+        .text-primary {
+            color: var(--primary-purple);
+        }
+        .text-neutral {
+            color: var(--neutral-gray);
+        }
+        .bg-cream-bg {
+            background-color: var(--cream-bg);
+        }
+        .bg-soft-cream {
+            background-color: var(--soft-cream);
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section h-80 flex items-center justify-center text-center text-cream-bg">
+        <div class="fade-in">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Contact Us</h1>
+            <p class="text-lg" style="color: var(--light-gold);">We'd love to hear from you. Reach out with questions or prayer requests.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-cream-bg">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Contact Details -->
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl font-bold text-primary mb-6">Get in Touch</h2>
+                    <div class="space-y-4 text-neutral">
+                        <p><i class="fas fa-map-marker-alt text-primary mr-2"></i> Plot 123, Ggaba Road, Kampala, Uganda</p>
+                        <p><i class="fas fa-phone text-primary mr-2"></i> +256 700 123 456</p>
+                        <p><i class="fas fa-envelope text-primary mr-2"></i> info@newlifekampala.org</p>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mt-8 mb-4">Service Times</h3>
+                    <ul class="space-y-2 text-neutral">
+                        <li>Sunday Worship: 10:00 AM</li>
+                        <li>Wednesday Bible Study: 6:00 PM</li>
+                        <li>Friday Prayer Meeting: 7:00 PM</li>
+                    </ul>
+                </div>
+                <!-- Contact Form -->
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl font-bold text-primary mb-6">Send Us a Message</h2>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-neutral mb-1">Name</label>
+                            <input type="text" id="name" class="w-full p-2 border rounded focus:outline-none focus:border-primary-purple" style="border-color: var(--light-purple);" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-neutral mb-1">Email</label>
+                            <input type="email" id="email" class="w-full p-2 border rounded focus:outline-none focus:border-primary-purple" style="border-color: var(--light-purple);" placeholder="Your Email">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-neutral mb-1">Message</label>
+                            <textarea id="message" class="w-full p-2 border rounded focus:outline-none focus:border-primary-purple" style="border-color: var(--light-purple);" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary px-6 py-2 rounded-lg font-semibold">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-8 bg-soft-cream">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-primary mb-6 text-center">Find Us</h2>
+            <div class="w-full h-64 bg-gray-300 rounded-lg" style="background-color: var(--neutral-gray);"></div> <!-- Placeholder for Google Maps -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-purple text-cream-bg py-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+                <h3 class="text-lg font-semibold mb-4" style="color: var(--light-gold);">Contact Us</h3>
+                <p class="text-neutral">Plot 123, Ggaba Road, Kampala, Uganda<br>+256 700 123 456</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4" style="color: var(--light-gold);">New Life Deliverance Church</h3>
+                <p class="text-neutral">Transforming lives through faith, hope, and love in Kampala, Uganda.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4" style="color: var(--light-gold);">Follow Us</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://twitter.com" class="text-neutral hover:text-light-gold transition-colors"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://facebook.com" class="text-neutral hover:text-light-gold transition-colors"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://youtube.com" class="text-neutral hover:text-light-gold transition-colors"><i class="fab fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p class="text-sm text-neutral">© 2025 New Life Deliverance Church Kampala. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="fixed bottom-4 right-4 bg-primary-purple text-cream-bg p-3 rounded-full shadow-lg hover:bg-soft-purple transition-colors" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>

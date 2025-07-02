@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <nav class="bg-[#f6f3ee] border-b border-[#d9c08c] shadow-md">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-3">
+    
+    <!-- Logo + Church Name -->
+    <a href="#" class="flex items-center space-x-3">
+      <img src="images/logo.jpeg" class="h-10 w-10 rounded-full border-2 border-[#aa8e56]" alt="Church Logo" />
+      <span class="text-[#9937ac] text-xl md:text-2xl font-bold tracking-wide uppercase">
+        New Life Deliverance Church
+      </span>
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button data-collapse-toggle="navbar-default" type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-[#463456] rounded-lg md:hidden hover:bg-[#e9dbb8] focus:outline-none focus:ring-2 focus:ring-[#aa8e56]"
+      aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul
+        class="font-semibold text-[#463456] flex flex-col p-4 md:p-0 mt-4 border border-[#e9dbb8] rounded-lg bg-[#fff] md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+
+        <li>
+          <a href="index.html"
+            class="block py-2 px-4 rounded-md text-white bg-[#9937ac] hover:bg-[#aa8e56] md:bg-transparent md:text-[#9937ac] md:hover:text-[#aa8e56] transition">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="about.html"
+            class="block py-2 px-4 rounded-md hover:bg-[#d5bad9] md:hover:bg-transparent hover:text-[#6c9478] transition">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="ministries.html"
+            class="block py-2 px-4 rounded-md hover:bg-[#e9dbb8] md:hover:bg-transparent hover:text-[#aa8e56] transition">
+            Ministries
+          </a>
+        </li>
+
+        <li>
+          <a href="sermons.html"
+            class="block py-2 px-4 rounded-md hover:bg-[#d9c08c] md:hover:bg-transparent hover:text-[#463456] transition">
+            Sermons
+          </a>
+        </li>
+
+        <li>
+          <a href="contact.html"
+            class="block py-2 px-4 rounded-md hover:bg-[#f6f3ee] md:hover:bg-transparent hover:text-[#6c9478] transition">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sermons Section - New Life Deliverance Church Kampala</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-purple: #9937ac; /* Dominant vibrant purple */
+            --secondary-gold: #aa8e56; /* Gold for buttons */
+            --dark-purple: #463456; /* Deep purple for footer */
+            --cream-bg: #f6f3ee; /* Light cream for backgrounds */
+            --light-purple: #b68fb6; /* Soft purple for borders */
+            --light-gold: #d9c08c; /* Light gold for hover */
+            --soft-purple: #d5bad9; /* Subtle purple accents */
+            --soft-cream: #e9dbb8; /* Soft cream for body */
+            --neutral-gray: #a8afab; /* Neutral text */
+            --green-accent: #6c9478; /* Green for subtle highlights */
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(153, 55, 172, 0.7), rgba(153, 55, 172, 0.7)), url('https://source.unsplash.com/1600x900/?church,sermon');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .sermon-card {
+            background-color: var(--cream-bg);
+            border: 2px solid var(--light-purple);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        .sermon-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .sermon-card img {
+            object-fit: cover;
+            width: 100%;
+            height: 180px;
+            transition: transform 0.3s ease;
+        }
+        .sermon-card:hover img {
+            transform: scale(1.05);
+        }
+        .sermon-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--primary-purple);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .sermon-card:hover::before {
+            opacity: 1;
+        }
+        .btn-primary {
+            background-color: var(--primary-purple);
+            color: var(--cream-bg);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: var(--soft-purple);
+            transform: scale(1.05);
+        }
+        .btn-icon {
+            background-color: var(--green-accent);
+            color: var(--cream-bg);
+            transition: background-color 0.3s ease;
+        }
+        .btn-icon:hover {
+            background-color: var(--light-gold);
+        }
+        .text-primary {
+            color: var(--primary-purple);
+        }
+        .text-neutral {
+            color: var(--neutral-gray);
+        }
+        .bg-soft-cream {
+            background-color: var(--soft-cream);
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-soft-cream">
+
+    <!-- Hero Section -->
+    <section class="hero-section h-80 flex items-center justify-center text-center text-cream-bg">
+        <div class="fade-in">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Sermons</h1>
+            <p class="text-lg text-light-gold max-w-xl mx-auto">Be inspired by the Word of God through our transformative sermons in Kampala.</p>
+        </div>
+    </section>
+
+    <!-- Sermons Section -->
+    <section class="py-16 bg-cream-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12">Recent Sermons</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Sermon 1 -->
+                <div class="sermon-card fade-in">
+                    <img src="https://source.unsplash.com/400x200/?sermon,preach" alt="Sermon: Faith in Action" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Faith in Action</h3>
+                        <p class="text-neutral mb-2">Pastor John Mukasa</p>
+                        <p class="text-neutral mb-4">June 15, 2025</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="btn-icon px-3 py-2 rounded-lg"><i class="fas fa-play"></i> Watch</a>
+                            <a href="#" class="btn-icon px-3 py-2 rounded-lg"><i class="fas fa-headphones"></i> Listen</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sermon 2 -->
+                <div class="sermon-card fade-in">
+                    <img src="https://source.unsplash.com/400x200/?church,prayer" alt="Sermon: The Power of Prayer" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">The Power of Prayer</h3>
+                        <p class="text-neutral mb-2">Pastor Sarah Nankya</p>
+                        <p class="text-neutral mb-4">June 8, 2025</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="btn-icon px-3 py-2 rounded-lg"><i class="fas fa-play"></i> Watch</a>
+                            <a href="#" class="btn-icon px-3 py-2 rounded-lg"><i class="fas fa-headphones"></i> Listen</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sermon 3 -->
+                <div class="sermon-card fade-in">
+                    <img src="https://source.unsplash.com/400x200/?worship,bible" alt="Sermon: Living by the Word" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Living by the Word</h3>
+                        <p class="text-neutral mb-2">Pastor David Kiggundu</p>
+                        <p class="text-neutral mb-4">June 1, 2025</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="btn-icon px-3 py-2 rounded-lg"><i class="fas fa-play"></i> Watch</a>
+                            <a href="#" class="btn-icon px-3 py-2 rounded-lg"><i class="fas fa-headphones"></i> Listen</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sermon 4 -->
+                <div class="sermon-card fade-in">
+                    <img src="https://source.unsplash.com/400x200/?hope,faith" alt="Sermon: Hope in Christ" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Hope in Christ</h3>
+                        <p class="text-neutral mb-2">Pastor Esther Nabwire</p>
+                        <p class="text-neutral mb-4">May 25, 2025</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="btn-icon px-3 py-2 rounded-lg"><i class="fas fa-play"></i> Watch</a>
+                            <a href="#" class="btn-icon px-3 py-2 rounded-lg"><i class="fas fa-headphones"></i> Listen</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sermon 5 -->
+                <div class="sermon-card fade-in">
+                    <img src="https://source.unsplash.com/400x200/?love,community" alt="Sermon: Love Your Neighbor" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Love Your Neighbor</h3>
+                        <p class="text-neutral mb-2">Pastor John Mukasa</p>
+                        <p class="text-neutral mb-4">May 18, 2025</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="btn-icon px-3 py-2 rounded-lg"><i class="fas fa-play"></i> Watch</a>
+                            <a href="#" class="btn-icon px-3 py-2 rounded-lg"><i class="fas fa-headphones"></i> Listen</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sermon 6 -->
+                <div class="sermon-card fade-in">
+                    <img src="https://source.unsplash.com/400x200/?grace,church" alt="Sermon: Grace Abounds" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Grace Abounds</h3>
+                        <p class="text-neutral mb-2">Pastor Sarah Nankya</p>
+                        <p class="text-neutral mb-4">May 11, 2025</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="btn-icon px-3 py-2 rounded-lg"><i class="fas fa-play"></i> Watch</a>
+                            <a href="#" class="btn-icon px-3 py-2 rounded-lg"><i class="fas fa-headphones"></i> Listen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-12 bg-primary-purple text-cream-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">Stay Connected</h2>
+            <p class="text-lg mb-6 max-w-xl mx-auto">Join us for our weekly sermons and grow in faith with our community in Kampala.</p>
+            <a href="contact.html" class="btn-primary px-6 py-3 rounded-lg font-semibold text-lg">Get Involved</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-purple text-cream-bg py-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-light-gold">Contact Us</h3>
+                <p class="text-neutral">Plot 123, Ggaba Road, Kampala, Uganda<br>+256 700 123 456</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-light-gold">New Life Deliverance Church</h3>
+                <p class="text-neutral">Transforming lives through faith, hope, and love in Kampala, Uganda.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-light-gold">Follow Us</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://twitter.com" class="hover:text-light-gold transition-colors"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://facebook.com" class="hover:text-light-gold transition-colors"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://youtube.com" class="hover:text-light-gold transition-colors"><i class="fab fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p class="text-sm text-neutral">© 2025 New Life Deliverance Church Kampala. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="fixed bottom-4 right-4 bg-primary-purple text-cream-bg p-3 rounded-full shadow-lg hover:bg-soft-purple transition-colors" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript for Scroll Animations -->
+    <script>
+        // Scroll Animation for Cards
+        const cards = document.querySelectorAll('.sermon-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+        cards.forEach(card => observer.observe(card));
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>
+    
+</body>
+</html>
